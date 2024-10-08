@@ -234,3 +234,50 @@ footer a{
     font-size: 45px;
     margin: 20px;
 }
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    color: white;
+    width: 90%;
+}
+.separator p {
+    padding: 0px 20px;
+    margin: unset;
+    min-width: unset;
+    font-size: 40px;
+}
+
+.separator::before{
+    content: '';
+    flex: .1;
+    border-bottom: 3px solid white;
+}
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid white;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.project-container h3{
+    color: white;
+    text-align: left;
+    font-size: 25px;
+}
+.project-container{
+    width: 50%;
+    margin: 30px 50px;
+}
+.project-container img{
+    width: 95%;
+}
